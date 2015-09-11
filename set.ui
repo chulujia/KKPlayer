@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="toolTip">
+   <string>覆盖已存在的下载歌曲</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>0</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>关闭</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>281</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>启动设置</string>
+   </property>
+   <property name="title">
+    <string>启动</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>程序启动后自动播放</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>程序启动后自动播放</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>程序启动后最小化</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>程序启动后最小化</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>继续上次的播放进度</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>继续上次的播放进度</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>播放</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>播放后自动下一曲</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>播放完后自动下一曲</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>下一曲随机播放</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>下一曲随机播放</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>160</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>列表设置</string>
+   </property>
+   <property name="title">
+    <string>列表</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>150</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>文件不存在时移除列表</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>文件不存在时移除列表</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>50</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>歌词设置</string>
+   </property>
+   <property name="title">
+    <string>歌词</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>自动下载歌词</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>自动下载歌词</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_8">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>130</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>显示歌词</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>显示歌词</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>701</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>播放</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>文件属性</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>441</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>云下载设置</string>
+   </property>
+   <property name="title">
+    <string>云下载</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下载歌曲路径：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>340</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>下载歌曲路径</string>
+    </property>
+    <property name="text">
+     <string>download</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>70</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>更改下载路径</string>
+    </property>
+    <property name="text">
+     <string>更改下载路径</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>缓存路径：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>340</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>缓存路径</string>
+    </property>
+    <property name="text">
+     <string>cache</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>130</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>更改缓存路径</string>
+    </property>
+    <property name="text">
+     <string>更改缓存路径</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>缓存大小：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>清除缓存文件</string>
+    </property>
+    <property name="text">
+     <string>清除缓存文件</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>160</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>缓存大小</string>
+    </property>
+    <property name="text">
+     <string>size</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>190</y>
+      <width>35</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>刷新</string>
+    </property>
+    <property name="text">
+     <string>刷新</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_10">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>200</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>覆盖已存在的下载歌曲</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_9">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>200</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>下载完成后添加到播放列表</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>70</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>打开歌曲文件夹</string>
+    </property>
+    <property name="text">
+     <string>打开歌曲文件夹</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>恢复默认设置</string>
+   </property>
+   <property name="text">
+    <string>恢复默认设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

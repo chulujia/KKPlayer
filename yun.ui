@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog5</class>
+ <widget class="QDialog" name="Dialog5">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;退出&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>691</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>511</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>文件属性</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>云下载</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_download">
+   <property name="geometry">
+    <rect>
+     <x>605</x>
+     <y>180</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>下载该歌曲</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_try">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>90</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>试听</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>340</y>
+     <width>461</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>431</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>提示:  为了更精确搜索请完整输入歌曲和艺术家</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>歌曲</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>艺术家</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_title">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>200</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>就是爱你</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_art">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>200</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>陶喆</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_search">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>从服务器查找</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>340</y>
+     <width>300</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>连接中</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>300</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>缓存失败</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_stop">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>90</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>停止试听</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>pushButton_2</zorder>
+  <zorder>line_2</zorder>
+  <zorder>label_16</zorder>
+  <zorder>btn_download</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>btn_stop</zorder>
+  <zorder>btn_try</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
